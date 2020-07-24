@@ -1,24 +1,25 @@
 body{
+    display:grid;
     width:100%;
     height:100%;
+    min-width:1150px;
     overflow:hidden;
 }
 
 .user{
     width:100%;
-    padding-top:1px;
+    padding-top:12px;
     text-align:right;
 }
 
 .user a{
     text-decoration:none;
     margin-right:1%;
-    font-size:55%;
+    font-size:80%;
     color:black;
 }
 
 .user a:visited{
-    font-size:50%;
     color:black;
 }
 
@@ -28,12 +29,13 @@ body{
 }
 
 .content{
+    display:block;
     width:100%;
     height:70%;
 }
 
 .content #search{
-    padding-left:20px;
+    padding-left:25px;
     outline:none;
 }
 
@@ -46,14 +48,14 @@ body{
 }
 
 .content button{
-    margin:0px 2px 0px 2px;
-    padding:0px 12px 0px 12px;
+    margin:10px 5px 0px 5px;
+    padding:0px 20px 0px 20px;
     width:auto;
-    height:22px;
+    height:30px;
     color:rgb(100,100,100);
     border-style:none;
     border-radius:3px;
-    font-size:10px;
+    font-size:15px;
     outline:none;
 }
 
@@ -71,27 +73,36 @@ body{
     flex-direction:column;
     color:grey;
     background-color:beige;
-    border:0.1px solid lightgrey;
+    border:1px solid lightgrey;
     align-content:flex-end;
-    /*
-    border-style:solid;
-    border-color:lightgrey;
-    */
+    width:100%;
+    min-width:1150px;
+    position: absolute;
+    bottom:0;
+}
+
+@media (max-height:470px)
+{
+    .footer{
+        display:none;
+        transition:all 3s;
+    }
 }
 
 .footer div{
-    font-size:60%;
+    font-size:90%;
     outline:none;
-    border:0.1px solid lightgrey;
     padding-left:10px;
 }
 
 .footer2{
     height:30px;
     display:flex;
+    padding:7px 0px 7px;
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
+    border-top:1px solid lightgrey;
 }
 
 .footer2 div{
